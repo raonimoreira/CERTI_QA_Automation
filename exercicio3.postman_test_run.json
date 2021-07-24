@@ -1,0 +1,297 @@
+{
+	"id": "c87d86de-a1c9-42a6-b1e4-c4d85a0e6501",
+	"name": "Exercício 3",
+	"timestamp": "2021-07-24T02:39:33.648Z",
+	"collection_id": "16779464-b54f21cc-c318-453f-b9fe-1fd5dcb73a41",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 9,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "e42621d5-bc9a-449c-bd90-cd515cd9aa1c",
+			"name": "Example - 58",
+			"url": "http://177.71.114.188/58",
+			"time": 37,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Exemplo - extenso em Português": true
+			},
+			"testPassFailCounts": {
+				"Exemplo - extenso em Português": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				37
+			],
+			"allTests": [
+				{
+					"Exemplo - extenso em Português": true
+				}
+			]
+		},
+		{
+			"id": "8f97acec-4b90-4dc9-8e1e-4ec6cc3d3f16",
+			"name": "Example 2 - en/58",
+			"url": "http://177.71.114.188/en/58",
+			"time": 30,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Exemplo - extenso em Inglês": true
+			},
+			"testPassFailCounts": {
+				"Exemplo - extenso em Inglês": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				30
+			],
+			"allTests": [
+				{
+					"Exemplo - extenso em Inglês": true
+				}
+			]
+		},
+		{
+			"id": "a50c71d3-ced2-4cf6-9a8f-c2605a408aa6",
+			"name": "Minimum Range",
+			"url": "http://177.71.114.188/-99999",
+			"time": 41,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Menor valor possível em Português": true
+			},
+			"testPassFailCounts": {
+				"Menor valor possível em Português": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				41
+			],
+			"allTests": [
+				{
+					"Menor valor possível em Português": true
+				}
+			]
+		},
+		{
+			"id": "6544cad6-a4f3-477f-9628-62cb6790aadc",
+			"name": "Maximum Range",
+			"url": "http://177.71.114.188/99999",
+			"time": 40,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Maior valor possível em Português": true
+			},
+			"testPassFailCounts": {
+				"Maior valor possível em Português": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				40
+			],
+			"allTests": [
+				{
+					"Maior valor possível em Português": true
+				}
+			]
+		},
+		{
+			"id": "12cdeef0-d919-4bf2-979f-2f9cf5123f11",
+			"name": "English Minimum Range",
+			"url": "http://177.71.114.188/en/-99999",
+			"time": 39,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Menor valor possível em Inglês": true
+			},
+			"testPassFailCounts": {
+				"Menor valor possível em Inglês": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				39
+			],
+			"allTests": [
+				{
+					"Menor valor possível em Inglês": true
+				}
+			]
+		},
+		{
+			"id": "16c6449e-4d56-4ff0-87aa-610e7a6df948",
+			"name": "English Maximum Range",
+			"url": "http://177.71.114.188/en/99999",
+			"time": 40,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Maior valor possível em Inglês": true
+			},
+			"testPassFailCounts": {
+				"Maior valor possível em Inglês": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				40
+			],
+			"allTests": [
+				{
+					"Maior valor possível em Inglês": true
+				}
+			]
+		},
+		{
+			"id": "67f1425b-f503-48b2-a317-7526268c6edc",
+			"name": "Over Range",
+			"url": "http://177.71.114.188/999999",
+			"time": 39,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Valor acima do limite superior": true
+			},
+			"testPassFailCounts": {
+				"Valor acima do limite superior": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				39
+			],
+			"allTests": [
+				{
+					"Valor acima do limite superior": true
+				}
+			]
+		},
+		{
+			"id": "f180efa6-f68a-4c25-996f-c8545f7066ab",
+			"name": "Under Range",
+			"url": "http://177.71.114.188/-999999",
+			"time": 38,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Valor abaixo do limite inferior": true
+			},
+			"testPassFailCounts": {
+				"Valor abaixo do limite inferior": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				38
+			],
+			"allTests": [
+				{
+					"Valor abaixo do limite inferior": true
+				}
+			]
+		},
+		{
+			"id": "dd44870b-5c14-4da7-90bb-6e541f650c12",
+			"name": "Symbols",
+			"url": "http://177.71.114.188/qwerty",
+			"time": 40,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Formato Inadequado": true
+			},
+			"testPassFailCounts": {
+				"Formato Inadequado": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				40
+			],
+			"allTests": [
+				{
+					"Formato Inadequado": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 344,
+	"collection": {
+		"requests": [
+			{
+				"id": "e42621d5-bc9a-449c-bd90-cd515cd9aa1c",
+				"method": "GET"
+			},
+			{
+				"id": "8f97acec-4b90-4dc9-8e1e-4ec6cc3d3f16",
+				"method": "GET"
+			},
+			{
+				"id": "a50c71d3-ced2-4cf6-9a8f-c2605a408aa6",
+				"method": "GET"
+			},
+			{
+				"id": "6544cad6-a4f3-477f-9628-62cb6790aadc",
+				"method": "GET"
+			},
+			{
+				"id": "12cdeef0-d919-4bf2-979f-2f9cf5123f11",
+				"method": "GET"
+			},
+			{
+				"id": "16c6449e-4d56-4ff0-87aa-610e7a6df948",
+				"method": "GET"
+			},
+			{
+				"id": "67f1425b-f503-48b2-a317-7526268c6edc",
+				"method": "GET"
+			},
+			{
+				"id": "f180efa6-f68a-4c25-996f-c8545f7066ab",
+				"method": "GET"
+			},
+			{
+				"id": "dd44870b-5c14-4da7-90bb-6e541f650c12",
+				"method": "GET"
+			}
+		]
+	}
+}

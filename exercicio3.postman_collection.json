@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "a6bad718-b344-4c39-8d04-708242428cf7",
+		"_postman_id": "b54f21cc-c318-453f-b9fe-1fd5dcb73a41",
 		"name": "Exercício 3",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -15,9 +15,9 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Exemplo - extenso em português\", function () {\r",
+									"pm.test(\"Exemplo - extenso em Português\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
-									"    pm.response.to.have.jsonBody ({extenso: 'cinquenta e oito'})\r",
+									"    pm.response.to.have.jsonBody({extenso: 'cinquenta e oito'})\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -50,9 +50,9 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Exemplo - extenso em inglês\", function () {\r",
+									"pm.test(\"Exemplo - extenso em Inglês\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
-									"    pm.response.to.have.jsonBody ({full: 'fifty eight'})\r",
+									"    pm.response.to.have.jsonBody({full: 'fifty eight'})\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -86,9 +86,9 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Menor valor possívele em Português\", function () {\r",
+									"pm.test(\"Menor valor possível em Português\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
-									"    pm.response.to.have.jsonBody ({extenso: 'menos noventa e nove mil, novecentos e noventa e nove'})\r",
+									"    pm.response.to.have.jsonBody({extenso: 'menos noventa e nove mil, novecentos e noventa e nove'})\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -123,7 +123,7 @@
 								"exec": [
 									"pm.test(\"Maior valor possível em Português\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
-									"    pm.response.to.have.jsonBody ({extenso: 'noventa e nove mil, novecentos e noventa e nove'})\r",
+									"    pm.response.to.have.jsonBody({extenso: 'noventa e nove mil, novecentos e noventa e nove'})\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -158,7 +158,7 @@
 								"exec": [
 									"pm.test(\"Menor valor possível em Inglês\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
-									"    pm.response.to.have.jsonBody ({full: 'minus ninety nite thounsand nine hundred and ninety nine'})\r",
+									"    pm.response.to.have.jsonBody({full: 'minus ninety nite thounsand nine hundred and ninety nine'})\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -192,9 +192,9 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Maior valor possível em inglês\", function () {\r",
+									"pm.test(\"Maior valor possível em Inglês\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
-									"    pm.response.to.have.jsonBody ({full: 'ninety nite thounsand nine hundred and ninety nine'})\r",
+									"    pm.response.to.have.jsonBody({full: 'ninety nite thounsand nine hundred and ninety nine'})\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -236,7 +236,7 @@
 								"exec": [
 									"pm.test(\"Valor acima do limite superior\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
-									"    pm.response.to.have.jsonBody ({extenso: 'noventa e nove mil, novecentos e noventa e nove'})\r",
+									"    pm.response.to.have.body(\" Invalid range\\n\");\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -264,6 +264,20 @@
 				},
 				{
 					"name": "Under Range",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Valor abaixo do limite inferior\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.response.to.have.body(\" Invalid range\\n\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -285,6 +299,20 @@
 				},
 				{
 					"name": "Symbols",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Formato Inadequado\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.response.to.have.body(\" Invalid data\\n\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -299,49 +327,6 @@
 							],
 							"path": [
 								"qwerty"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Comma",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://177.71.114.188/-9999,9",
-							"protocol": "http",
-							"host": [
-								"177",
-								"71",
-								"114",
-								"188"
-							],
-							"path": [
-								"-9999,9"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Unspecified Language",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://177.71.114.188/fr/99999",
-							"protocol": "http",
-							"host": [
-								"177",
-								"71",
-								"114",
-								"188"
-							],
-							"path": [
-								"fr",
-								"99999"
 							]
 						}
 					},
