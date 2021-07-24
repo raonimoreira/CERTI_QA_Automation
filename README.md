@@ -20,3 +20,7 @@ Desafio do Processo seletivo pra Fundação CERTI
 - Na parte superior da tela, próximo ao canto direito, clicar em "Run".
 - Determinar o número de iterações desejadas.
 - Clicar em "Run Exercício 3"
+
+**Observações**
+- Os arquivos exercicio3.postman_test_run.json e exercício 3 test run.png referem-se à minha execução piloto dos testes supracitados.
+- As respostas para as atividades 1 e 2 desse desafio encontram-se respectivamente nos arquivos Exercício 1.zip e Exercício 2.zip
