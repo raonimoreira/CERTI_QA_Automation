@@ -3,7 +3,7 @@ Desafio do Processo seletivo pra Fundação CERTI
 
 **Atividade 3**
 
-**Instruções**
+**Instruções:**
 
 **Ambiente de testes**
 - Se necessário, criar uma conta em https://identity.getpostman.com/signup.
