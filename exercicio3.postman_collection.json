@@ -1,0 +1,354 @@
+{
+	"info": {
+		"_postman_id": "a6bad718-b344-4c39-8d04-708242428cf7",
+		"name": "Exercício 3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Happy Path",
+			"item": [
+				{
+					"name": "Example - 58",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Exemplo - extenso em português\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.response.to.have.jsonBody ({extenso: 'cinquenta e oito'})\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://177.71.114.188/58",
+							"protocol": "http",
+							"host": [
+								"177",
+								"71",
+								"114",
+								"188"
+							],
+							"path": [
+								"58"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Example 2 - en/58",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Exemplo - extenso em inglês\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.response.to.have.jsonBody ({full: 'fifty eight'})\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://177.71.114.188/en/58",
+							"protocol": "http",
+							"host": [
+								"177",
+								"71",
+								"114",
+								"188"
+							],
+							"path": [
+								"en",
+								"58"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Minimum Range",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Menor valor possívele em Português\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.response.to.have.jsonBody ({extenso: 'menos noventa e nove mil, novecentos e noventa e nove'})\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://177.71.114.188/-99999",
+							"protocol": "http",
+							"host": [
+								"177",
+								"71",
+								"114",
+								"188"
+							],
+							"path": [
+								"-99999"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Maximum Range",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Maior valor possível em Português\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.response.to.have.jsonBody ({extenso: 'noventa e nove mil, novecentos e noventa e nove'})\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://177.71.114.188/99999",
+							"protocol": "http",
+							"host": [
+								"177",
+								"71",
+								"114",
+								"188"
+							],
+							"path": [
+								"99999"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "English Minimum Range",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Menor valor possível em Inglês\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.response.to.have.jsonBody ({full: 'minus ninety nite thounsand nine hundred and ninety nine'})\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://177.71.114.188/en/-99999",
+							"protocol": "http",
+							"host": [
+								"177",
+								"71",
+								"114",
+								"188"
+							],
+							"path": [
+								"en",
+								"-99999"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "English Maximum Range",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Maior valor possível em inglês\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.response.to.have.jsonBody ({full: 'ninety nite thounsand nine hundred and ninety nine'})\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://177.71.114.188/en/99999",
+							"protocol": "http",
+							"host": [
+								"177",
+								"71",
+								"114",
+								"188"
+							],
+							"path": [
+								"en",
+								"99999"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "These tests check for expected behavior during regular (optimal) operation."
+		},
+		{
+			"name": "Off Road",
+			"item": [
+				{
+					"name": "Over Range",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Valor acima do limite superior\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.response.to.have.jsonBody ({extenso: 'noventa e nove mil, novecentos e noventa e nove'})\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://177.71.114.188/999999",
+							"protocol": "http",
+							"host": [
+								"177",
+								"71",
+								"114",
+								"188"
+							],
+							"path": [
+								"999999"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Under Range",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://177.71.114.188/-999999",
+							"protocol": "http",
+							"host": [
+								"177",
+								"71",
+								"114",
+								"188"
+							],
+							"path": [
+								"-999999"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Symbols",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://177.71.114.188/qwerty",
+							"protocol": "http",
+							"host": [
+								"177",
+								"71",
+								"114",
+								"188"
+							],
+							"path": [
+								"qwerty"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Comma",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://177.71.114.188/-9999,9",
+							"protocol": "http",
+							"host": [
+								"177",
+								"71",
+								"114",
+								"188"
+							],
+							"path": [
+								"-9999,9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unspecified Language",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://177.71.114.188/fr/99999",
+							"protocol": "http",
+							"host": [
+								"177",
+								"71",
+								"114",
+								"188"
+							],
+							"path": [
+								"fr",
+								"99999"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "These tests check for expected behavior during irregular (outside standard parameters) operation."
+		}
+	]
+}
